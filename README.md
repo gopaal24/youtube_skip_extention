@@ -1,7 +1,7 @@
 # youtube_skip_extention
-A youtube extention that seamlessly integrates frwd and rwnd skip buttons.
+A youtube extension that seamlessly integrates FRWD and RWND skip buttons.
 
 ## Future Prospect
--> Cutomizable time
--> Drag along player on scroll
--> Snapshot button
+.Customizable time
+.Drag along the player on scroll
+.Snapshot button
