@@ -1,0 +1,28 @@
+{
+    "name" : "Skip",
+    "version" : "0.1",
+    "manifest_version" : 3,
+    "permissions" : ["tabs", "webNavigation", "scripting", "activeTab", "storage"],
+    "background" : {
+        "service_worker" : "background.js"
+    },
+    "content_scripts" : [{
+        "matches" : ["https://www.youtube.com/*"],
+        "js" : ["content.js"],
+        "css" : ["style.css"]
+    }],
+    "action" : {
+        "default_popup" : "popup.html"
+    },
+    "web_accessible_resources" : [
+        {
+            "resources" : [
+                "assets/fast_forward.png",
+                "assets/backward.png",
+                "assets/camera_.png",
+                "buttons.js"
+            ],
+            "matches" : ["https://www.youtube.com/*"]
+        }
+    ]
+}
